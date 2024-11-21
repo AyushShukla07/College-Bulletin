@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 100px;
+            background-color: #003366;
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 400px;
+        }
+
+        img {
+            height: 50px;
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            font-size: 20px;
+            text-decoration: none;
+            list-style: none;
+            gap: 20px;
+            font-family: sans-serif;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .heading {
+            font-size: 13px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 2rem;
+            background-color: transparent;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Cards Section */
+        .cards-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 23%;
+            /* Each card takes up about 1/4 of the available space */
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            /* Make the image circular */
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .card-content h3 {
+            color: #003366;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #333;
+            font-family: sans-serif;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 14px;
+        }
+
+        footer ul li {
+            list-style: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .cards-container {
+                justify-content: center;
+            }
+
+            .card {
+                width: 45%;
+                /* For medium screens, 2 cards per row */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+                /* For small screens, 1 card per row */
+            }
+        }
+
+        .main-content h2 {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0za3Xj-ninly6UjCkKEViZwB3z79X6d3rtJS2q9ggxw2FrXG91Ts9NFAVyfcVgeHNBY4&usqp=CAU"
+                alt="College Logo" class="logo">
+            <div class="heading">
+                <h1>KIET GROUP OF INSTITUTIONS</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notice.html">Notice</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="cb.html">Kiet AI</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+
+
+    <main class="main-content">
+
+        <h2>In case of any inconvinience feel free to contact us</h2>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="images/profile1.jpg" alt="Card Image 1">
+                <div class="card-content">
+                    <h3>Ayush Shukla</h3>
+                    <p>This is a description of the first card. The content goes beside the circular image.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="images/profile2.jpg" alt="Card Image 2">
+                <div class="card-content">
+                    <h3>Chitwan Bajpai</h3>
+                    <p>This is a description of the second card. The content goes beside the circular image.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="images/profile3.jpg" alt="Card Image 3">
+                <div class="card-content">
+                    <h3>Ayush Jain</h3>
+                    <p>This is a description of the third card. The content goes beside the circular image.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="images/profile4.jpg" alt="Card Image 4">
+                <div class="card-content">
+                    <h3>Anand Manuvanjay</h3>
+                    <p>This is a description of the fourth card. The content goes beside the circular image.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section>
+            <h2>Contact Information</h2>
+            <p>For admissions, inquiries, or any further information, feel free to contact us at:</p>
+            <ul>
+                <li>Email: contact@ourcollege.edu</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Address: 123 College Road, City, State, ZIP</li>
+            </ul>
+        </section>
+        <p>&copy; 2024 KIET. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

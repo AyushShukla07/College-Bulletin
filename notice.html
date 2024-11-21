@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notices</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+        }
+
+        /* Header Styling */
+        header {
+            height: 100px;
+            background-color: #003366;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            gap: 300px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        img {
+            height: 50px;
+        }
+
+        .heading h1 {
+            font-size: 24px;
+            font-family: sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            /* Make it clear the card is clickable */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            color: #003366;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        footer ul li {
+            list-style: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .card-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .main-content h2 {
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .card-container h3 {
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .card-container a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0za3Xj-ninly6UjCkKEViZwB3z79X6d3rtJS2q9ggxw2FrXG91Ts9NFAVyfcVgeHNBY4&usqp=CAU"
+                alt="College Logo" class="logo">
+            <div class="heading">
+                <h1>KIET GROUP OF INSTITUTIONS</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notice.html">Notice</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="cb.html">Kiet AI</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h2>College Notices</h2>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <a href="notice1.html" class="card">
+                <img src="images/job.jpg" alt="Notice Image 1">
+                <div class="card-content">
+                    <h3>Jobs</h3>
+                    <p>This is a brief description of the first notice. It gives an overview of what the notice is about
+                        and some details.</p>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="notice2.html" class="card">
+                <img src="images/internship_notice.webp" alt="Notice Image 2">
+                <div class="card-content">
+                    <h3>Internships</h3>
+                    <p>This is a brief description of the second notice. It provides some details and context about the
+                        notice content.</p>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="notice3.html" class="card">
+                <img src="images/hackathon_notice.jpg" alt="Notice Image 3">
+                <div class="card-content">
+                    <h3>Hackathons</h3>
+                    <p>This is a brief description of the third notice. It highlights important points related to the
+                        upcoming event or announcement.</p>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="notice4.html" class="card">
+                <img src="images/academic_updates.jpg" alt="Notice Image 4">
+                <div class="card-content">
+                    <h3>Academic Updates</h3>
+                    <p>This is a brief description of the fourth notice, providing key information that users need to be
+                        aware of.</p>
+                </div>
+            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Card 1 -->
+            <a href="notice1.html" class="card">
+                <img src="images/workshop.jpg" alt="Notice Image 1">
+                <div class="card-content">
+                    <h3>Workshops</h3>
+                    <p>This is a brief description of the first notice. It gives an overview of what the notice is about
+                        and some details.</p>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="notice2.html" class="card">
+                <img src="images/event.jpg" alt="Notice Image 2">
+                <div class="card-content">
+                    <h3>Events</h3>
+                    <p>This is a brief description of the second notice. It provides some details and context about the
+                        notice content.</p>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="notice3.html" class="card">
+                <img src="images/scholarship.jpg" alt="Notice Image 3">
+                <div class="card-content">
+                    <h3>Scholarships</h3>
+                    <p>This is a brief description of the third notice. It highlights important points related to the
+                        upcoming event or announcement.</p>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="notice4.html" class="card">
+                <img src="images/bootcamp.jpg" alt="Notice Image 4">
+                <div class="card-content">
+                    <h3>Boot Camps</h3>
+                    <p>This is a brief description of the fourth notice, providing key information that users need to be
+                        aware of.</p>
+                </div>
+            </a>
+
+            <!-- Repeat for more cards, with each having a unique link -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section>
+            <h2>Contact Information</h2>
+            <p>For admissions, inquiries, or any further information, feel free to contact us at:</p>
+            <ul>
+                <li>Email: contact@ourcollege.edu</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Address: 123 College Road, City, State, ZIP</li>
+            </ul>
+        </section>
+        <p>&copy; 2024 KIET. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

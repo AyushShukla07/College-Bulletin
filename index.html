@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIET Group of Institutions</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            /* Ensure the body and html take up full height */
+            overflow-x: hidden;
+            /* Prevent horizontal scroll */
+        }
+
+        body {
+            background: url(images/homepagebg.jpg) no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            /* backdrop-filter: blur(0px);
+    scroll-behavior: smooth; */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        header {
+            height: 100px;
+            background-color: #003366;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        img {
+            height: 50px;
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .heading {
+            font-size: 15px;
+            color: white;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex-grow: 1;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+            max-width: 1000px;
+            background-color: transparent;
+        }
+
+        .main-content h2 {
+            color: #212121;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .main-content p {
+            color: #f0f0f0;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Ads Section */
+        .ads-container {
+            position: fixed;
+            top: 20%;
+            /* You can adjust this to be more flexible */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 220px;
+            z-index: 999;
+            /* Increased z-index to ensure it's on top */
+        }
+
+        /* Left-side Ads */
+        .left-ads {
+            left: 20px;
+        }
+
+        /* Right-side Ads */
+        .right-ads {
+            right: 20px;
+        }
+
+        /* Ad Card Styling */
+        .ad {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ad img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .ad:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .ad:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 14px;
+        }
+
+        /* Footer Links Styling */
+        .footer a {
+            color: #FFD700;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            .main-content {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .ads-container {
+                width: 180px;
+            }
+
+            .ad img {
+                height: 130px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 0 10px;
+            }
+
+            .navbar-content {
+                gap: 10px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .ads-container {
+                width: 160px;
+                left: 10px;
+                right: 10px;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+        }
+
+        main {
+            position: relative;
+        }
+
+
+        main {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="navbar-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0za3Xj-ninly6UjCkKEViZwB3z79X6d3rtJS2q9ggxw2FrXG91Ts9NFAVyfcVgeHNBY4&usqp=CAU"
+                    alt="College Logo" class="logo">
+                <div class="heading">
+                    <h1>KIET GROUP OF INSTITUTIONS</h1>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="notice.html">Notice</a></li>
+                    <li><a href="clubs.html">Clubs</a></li>
+                    <li><a href="cb.html">Kiet AI</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section>
+            <h2>Welcome to Our College</h2>
+            <p>Our college is a leading institution dedicated to providing high-quality education and opportunities for
+                growth. We are committed to fostering an environment of learning, innovation, and creativity.</p>
+        </section>
+
+        <section>
+            <h2>Academic Programs</h2>
+            <p>We offer a variety of undergraduate and postgraduate programs across multiple disciplines including
+                Science, Arts, Commerce, Engineering, and Technology. Our programs are designed to equip students with
+                knowledge and skills for a successful career.</p>
+        </section>
+
+        <section>
+            <h2>Research and Development</h2>
+            <p>Our college is at the forefront of research and development in various fields. With state-of-the-art
+                laboratories, experienced faculty, and partnerships with industry leaders, we provide students with
+                ample opportunities for research and innovation.</p>
+        </section>
+
+        <section>
+            <h2>Campus Facilities</h2>
+            <p>We offer a wide range of facilities to our students, including modern libraries, fully equipped labs,
+                sports complexes, hostels, and cafeterias. Our campus is designed to support both academic and
+                extracurricular activities.</p>
+        </section>
+
+        <section>
+            <h2>Events and Activities</h2>
+            <p>Our college hosts numerous events throughout the year, such as cultural festivals, tech fests, sports
+                meets, and guest lectures. These events offer students a platform to showcase their talents, network,
+                and gain exposure to different fields.</p>
+        </section>
+
+        <section>
+            <h2>Alumni Network</h2>
+            <p>Our alumni are our pride, and they continue to achieve great heights in their respective careers. We have
+                a strong alumni network that helps current students with mentorship and networking opportunities.</p>
+        </section>
+    </main>
+
+    <!-- Ads Section (Left Side of the Page) -->
+    <div class="ads-container left-ads">
+        <div class="ad">
+            <img src="images/yogi.jpeg" alt="Ad 1">
+        </div>
+        <div class="ad">
+            <img src="images/ieee.jpeg" alt="Ad 2">
+        </div>
+        <div class="ad">
+            <img src="images/ad3.jpg" alt="Ad 3">
+        </div>
+
+    </div>
+
+    <!-- Ads Section (Right Side of the Page) -->
+    <div class="ads-container right-ads">
+        <div class="ad">
+            <img src="images/yogi.jpeg" alt="Ad 1">
+        </div>
+        <div class="ad">
+            <img src="images/ieee.jpeg" alt="Ad 2">
+        </div>
+        <div class="ad">
+            <img src="images/ad3.jpg" alt="Ad 3">
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 KIET. All rights reserved.</p>
+        <section>
+            <h2>Contact Information</h2>
+            <p>For admissions, inquiries, or any further information, feel free to contact us at:</p>
+            <ul>
+                <li>Email: contact@ourcollege.edu</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Address: 123 College Road, City, State, ZIP</li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+</html>
